@@ -1,4 +1,4 @@
-`from numpy import array
+from numpy import array
 from numpy.linalg import svd
 from numpy import zeros
 from numpy import diag
@@ -319,4 +319,3 @@ seed(1)
 means = [mean(randint(1, 7, 50)) for _ in range(1000)]
 pyplot.hist(means)
 pyplot.show()
-`
