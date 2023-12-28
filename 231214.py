@@ -319,3 +319,4 @@ seed(1)
 means = [mean(randint(1, 7, 50)) for _ in range(1000)]
 pyplot.hist(means)
 pyplot.show()
+
