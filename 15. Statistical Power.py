@@ -11,7 +11,7 @@ alpha = 0.05
 nobs1 = 40
 power = 0.8
 sample_sizes = array(range(5, 100))
-effect_sizes = array([0.8])
+effect_sizes = array([0.8, 0.9])
 analysis = TTestIndPower()
 
 # 검정력을 구해보자.
@@ -24,8 +24,10 @@ print('Sample Size: %.3f' % result)
 
 
 # 표본의 크기에 따라서 어떻게 변하는지 확인을 해보자
-analysis.plot_power(dep_var='nobs', nobs=sample_sizes, effect_size=effect_sizes)
+analysis.plot_power(dep_var='nobs', nobs=sample_sizes, effect_size=effect_sizes, alpha=alpha)
 pyplot.show()
+
+
 
 
 # 표본의 크기와 effect size를 다양화했을 때 변화하는 검증력을 그래프에 나타내자.
